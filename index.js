@@ -6,8 +6,8 @@ function getComputersChoice() {
   return myArray[Math.floor(Math.random() * myArray.length)];
 }
 
-const playerSelection = "paper";
-const computerSelection = getComputersChoice();
+let playerSelection = prompt("rock, paper or scissors").toLowerCase() ;
+let computerSelection = getComputersChoice();
 
 console.log(computerSelection);
 console.log(playerSelection);
@@ -39,17 +39,33 @@ function playRound(playerSelection, computerSelection) {
   } else {
     console.log("nah");
   }
+
+  return ;
 }
 
 playRound(playerSelection, computerSelection);
 
+
 function game() {
-  for (let i = 0; i < 5; i++) {
-    // your code here!
+    //Play game 5 times
+    for (let i = 0; i < 5; i++) {
+    //   const playerSelection = playerPlay();
+    //   const computerSelection = computerPlay();
+    //   // Call playRound function, passing in newly returned values
+    //   // from the playerPlay and computerPlay functions
+    //   const currentRound = playRound(playerSelection, computerSelection);
+    //   // Log our result
+    //   console.log(currentRound);)
 
-    playRound(playerSelection, computerSelection);
-    console.log(game(playerSelection, computerSelection));
-  }
-}
+    console.log(playRound(playerSelection, computerSelection));
+    
+    }
+ }
 
-game();
+
+
+
+
+
+
+
