@@ -10,8 +10,10 @@ function getComputersChoice(){
 
 }
 
-const playerSelection = "rock";
+const playerSelection = "paper";
 const computerSelection = getComputersChoice();
+
+console.log(computerSelection)
 
 function playRound(playerSelection, computerSelection) {
     // your code here!
@@ -26,15 +28,24 @@ function playRound(playerSelection, computerSelection) {
     playerSelection == 'paper' && computerSelection == 'scissors'){
     console.log('Congratulations!, You win ' +  playerSelection + ' ' + 'beats ' + computerSelection)
     }
+
+    
+    
+}
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        // your code here!
+    
+        playRound(playerSelection, computerSelection)
+        console.log(playRound(playerSelection, computerSelection))
+    
+        
+    }
+      
     
 }
    
-for (let i = 0; i < 5; i++) {
-    // your code here!
-
-    playRound(playerSelection, computerSelection);
-}
-  
-
+game();
 
 
